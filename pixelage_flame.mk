@@ -7,18 +7,13 @@
 ALLOW_MISSING_DEPENDENCIES := true
 TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
-DISABLE_ARTIFACT_PATH_REQUIREMENTS := true                                                
-INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := Hans98 (taltalasuka)
-TARGET_SUPPORTS_BLUR := true
-TARGET_HAS_UDFPS := false
-WITH_GAPPS := true
-TARGET_SHIPS_FULL_GAPPS := false
-TARGET_BUILD_GOOGLE_TELEPHONY := true
-USE_MOTO_CALCULATOR := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common Pixelage stuff.
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_flame.mk)
@@ -28,7 +23,7 @@ include device/google/coral/flame/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := infinity_flame
+PRODUCT_NAME := pixelage_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
