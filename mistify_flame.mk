@@ -9,8 +9,16 @@ TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-# Inherit some common Pixelage stuff.
-$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
+MISTOS_MAINTAINER=Hans982 (@taltalasuka)
+TARGET_ENABLE_BLUR := true
+PRODUCT_NO_CAMERA := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+WITH_GMS := true
+TARGET_HAS_UDFPS := false
+EXTRA_UDFPS_ANIMATIONS := false
+
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/Lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_flame.mk)
@@ -20,7 +28,7 @@ include device/google/coral/flame/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := pixelage_flame
+PRODUCT_NAME := mistify_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
