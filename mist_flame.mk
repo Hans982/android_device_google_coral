@@ -28,7 +28,7 @@ include device/google/coral/flame/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := mistify_flame
+PRODUCT_NAME := mist_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
