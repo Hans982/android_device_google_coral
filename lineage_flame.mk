@@ -8,11 +8,6 @@ ALLOW_MISSING_DEPENDENCIES := true
 TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
-
-MISTOS_MAINTAINER=Hans982 @taltalasuka
-TARGET_ENABLE_BLUR := true
-PRODUCT_NO_CAMERA := false
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 WITH_GMS := true
 TARGET_HAS_UDFPS := false
 EXTRA_UDFPS_ANIMATIONS := false
@@ -28,7 +23,7 @@ include device/google/coral/flame/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := mist_flame
+PRODUCT_NAME := lineage_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
