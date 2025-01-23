@@ -12,6 +12,13 @@ WITH_GMS := true
 TARGET_HAS_UDFPS := false
 EXTRA_UDFPS_ANIMATIONS := false
 
+# Extra apps are included by default.
+# Set false to disable it
+TARGET_INCLUDE_EXTRA_APPS := true
+
+# Set this for display your name in firmware version
+CUSTOM_MAINTAINER := Hans982 (taltalasuka)
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/Lineage/config/common_full_phone.mk)
 
