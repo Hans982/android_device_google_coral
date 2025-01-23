@@ -13,6 +13,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+ALLOW_MISSING_DEPENDENCIES := true
+TARGET_DISABLE_EPPE := true
+BUILD_BROKEN_DUP_RULES := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+WITH_GMS := true
+TARGET_HAS_UDFPS := false
+EXTRA_UDFPS_ANIMATIONS := false
+
+# Extra apps are included by default.
+# Set false to disable it
+TARGET_INCLUDE_EXTRA_APPS := true
+
+# Set this for display your name in firmware version
+CUSTOM_MAINTAINER := Hans982 (taltalasuka)
 
 #
 # All components inherited here go to system image
@@ -60,6 +74,11 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 ifneq (REL,$(PLATFORM_VERSION_CODENAME))
   PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
 endif
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2280
+TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
