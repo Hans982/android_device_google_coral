@@ -25,9 +25,6 @@ EXTRA_UDFPS_ANIMATIONS := false
 # Set false to disable it
 TARGET_INCLUDE_EXTRA_APPS := true
 
-# Set this for display your name in firmware version
-CUSTOM_MAINTAINER := Hans982 (taltalasuka)
-
 #
 # All components inherited here go to system image
 #
