@@ -8,16 +8,17 @@ ALLOW_MISSING_DEPENDENCIES := true
 TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
+# To include Gapps 
 WITH_GMS := true
-TARGET_HAS_UDFPS := false
-EXTRA_UDFPS_ANIMATIONS := false
 
-# Extra apps are included by default.
-# Set false to disable it
-TARGET_INCLUDE_EXTRA_APPS := true
+# To Build Pixel launcher
+TARGET_INCLUDE_NEXUS := true
 
-# Set this for display your name in firmware version
-CUSTOM_MAINTAINER := Hans982 (taltalasuka)
+#Some more GMS Flag
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true 
+TARGET_INCLUDE_STOCK_AICORE := true
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/Lineage/config/common_full_phone.mk)
