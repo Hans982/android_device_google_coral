@@ -21,10 +21,6 @@ WITH_GMS := true
 TARGET_HAS_UDFPS := false
 EXTRA_UDFPS_ANIMATIONS := false
 
-# Extra apps are included by default.
-# Set false to disable it
-TARGET_INCLUDE_EXTRA_APPS := true
-
 #
 # All components inherited here go to system image
 #
