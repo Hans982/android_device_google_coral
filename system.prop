@@ -1,0 +1,6 @@
+# Add these as PRODUCT_SYSTEM_PROPERTIES (system.prop), You may use utilities as libinit if configuring for unified devices
+ro.infinity.soc=Snapdragon 855+
+ro.infinity.battery=2800 mAh
+ro.infinity.display=1280 x 2280, 60 Hz, 90 Hz
+ro.infinity.camera=12.2MP + 16.3MP + 8.0MP
+ro.product.marketname=Google Pixel 4+
