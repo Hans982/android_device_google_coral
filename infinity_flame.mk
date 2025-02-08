@@ -9,7 +9,13 @@ TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := Hans982
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := true
+TARGET_SHIPS_FULL_GAPPS := false
+TARGET_BUILD_GOOGLE_TELEPHONY := true
+USE_MOTO_CALCULATOR := true
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/Lineage/config/common_full_phone.mk)
