@@ -9,16 +9,7 @@ TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-# To include Gapps 
-WITH_GMS := true
 
-# To Build Pixel launcher
-TARGET_INCLUDE_NEXUS := true
-
-#Some more GMS Flag
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true 
-TARGET_INCLUDE_STOCK_AICORE := true
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/Lineage/config/common_full_phone.mk)
