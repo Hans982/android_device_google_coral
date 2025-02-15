@@ -9,11 +9,13 @@ TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-WITH_GMS := true
-TARGET_INCLUDE_NEXUS := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_STOCK_AICORE := false
+ORION_MAINTAINER := Hans982
+ORION_MAINTAINER_LINK := https://t.me/taltalasuka
+ORION_BUILD_TYPE := Unofficial
+ORION_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_HAS_UDFPS := false
+TARGET_PIXEL_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
