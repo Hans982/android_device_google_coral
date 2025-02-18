@@ -3,19 +3,19 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
 ALLOW_MISSING_DEPENDENCIES := true
 TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-ORION_MAINTAINER := Hans982
-ORION_MAINTAINER_LINK := https://t.me/taltalasuka
-ORION_BUILD_TYPE := Unofficial
-ORION_GAPPS := true
-TARGET_BOOT_ANIMATION_RES := 1080
+MISTOS_MAINTAINER=Hans982
+TARGET_ENABLE_BLUR := true
+PRODUCT_NO_CAMERA := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 TARGET_HAS_UDFPS := false
-TARGET_PIXEL_BOOT_ANIMATION_RES := 1080
+EXTRA_UDFPS_ANIMATIONS := false
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -28,7 +28,7 @@ include device/google/coral/flame/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := orion_flame
+PRODUCT_NAME := lineage_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
