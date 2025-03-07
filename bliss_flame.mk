@@ -8,15 +8,8 @@ TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-WITH_GMS := true
-TARGET_INCLUDE_NEXUS := false
-TARGET_SUPPORTS_WALLEFFECT := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_STOCK_AICORE := false
-
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_flame.mk)
@@ -26,7 +19,7 @@ include device/google/coral/flame/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := lineage_flame
+PRODUCT_NAME := bliss_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
