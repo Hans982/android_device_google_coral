@@ -29,7 +29,7 @@ AB_OTA_PARTITIONS += \
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Reserve space for gapps install
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/bliss/config/BoardConfigReservedSize.mk
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy-lineage/dynamic
