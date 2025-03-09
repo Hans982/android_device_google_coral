@@ -21,9 +21,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_coral.mk \
-    $(LOCAL_DIR)/bliss_flame.mk
+    $(LOCAL_DIR)/orion_coral.mk \
+    $(LOCAL_DIR)/orion_flame.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_coral-trunk_staging-userdebug \
-    bliss_flame-trunk_staging-userdebug
+    orion_coral-trunk_staging-userdebug \
+    orion_flame-trunk_staging-userdebug
