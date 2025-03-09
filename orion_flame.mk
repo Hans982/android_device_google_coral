@@ -9,17 +9,25 @@ BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_flame.mk)
 
 include device/google/coral/flame/device-lineage.mk
 
+ORION_MAINTAINER := Hans982
+ORION_MAINTAINER_LINK := https://t.me/taltalasuka
+ORION_BUILD_TYPE := OFFICIAL
+ORION_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_HAS_UDFPS := false
+TARGET_PIXEL_BOOT_ANIMATION_RES := 1080
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := bliss_flame
+PRODUCT_NAME := orion_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
