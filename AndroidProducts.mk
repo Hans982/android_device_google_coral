@@ -21,9 +21,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/orion_coral.mk \
-    $(LOCAL_DIR)/orion_flame.mk
+    $(LOCAL_DIR)/infinity_coral.mk \
+    $(LOCAL_DIR)/infinity_flame.mk
 
 COMMON_LUNCH_CHOICES := \
-    orion_coral-trunk_staging-userdebug \
-    orion_flame-trunk_staging-userdebug
+    infinity_coral-trunk_staging-userdebug \
+    infinity_flame-trunk_staging-userdebug
