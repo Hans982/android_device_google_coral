@@ -94,3 +94,4 @@ PRODUCT_PACKAGES += \
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
