@@ -8,7 +8,7 @@ TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-# Inherit some common Lineage stuff.
+# Inherit some common Infinity-X stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit device configuration
@@ -16,6 +16,9 @@ $(call inherit-product, device/google/coral/aosp_flame.mk)
 
 include device/google/coral/flame/device-lineage.mk
 
+# Infinity-X stuff.
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 INFINITY_BUILD_TYPE := UNOFFICIAL
 INFINITY_MAINTAINER := Hans982 (@taltalasuka)
 TARGET_SUPPORTS_BLUR := true
