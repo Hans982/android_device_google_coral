@@ -16,19 +16,20 @@ $(call inherit-product, device/google/coral/aosp_flame.mk)
 
 include device/google/coral/flame/device-lineage.mk
 
-AXION_CAMERA_REAR_INFO := 12,2MP + 16,3MP
-AXION_CAMERA_FRONT_INFO := 8.1MP
+AXION_CAMERA_REAR_INFO := 12,2,16,3
+AXION_CAMERA_FRONT_INFO := 8.1
 AXION_MAINTAINER := Hans982_(@taltalasuka)
-AXION_PROCESSOR := Snapdragon_855_+
+AXION_PROCESSOR := Qualcomm®_Snapdragon™_855+
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := axion_flame
+PRODUCT_NAME := lineage_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="flame-user 13 TP1A.221005.002.B2 9382335 release-keys" \
