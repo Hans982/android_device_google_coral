@@ -8,29 +8,39 @@ TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-# Inherit some common Infinity-X stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common Alphadroid stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_flame.mk)
 
 include device/google/coral/flame/device-lineage.mk
 
-# Infinity-X stuff.
-TARGET_SUPPORTS_CALL_RECORDING := true
+# Device config
+TARGET_HAS_UDFPS := false
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := Hans982
-TARGET_SUPPORTS_BLUR := true
-WITH_GAPPS := true
-TARGET_SHIPS_FULL_GAPPS := false
-TARGET_BUILD_GOOGLE_TELEPHONY := true
-USE_MOTO_CALCULATOR := true
+
+# Build config
+TARGET_BUILD_PACKAGE := 3
+TARGET_INCLUDE_LAWNCHAIR := false
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_MATLOG := false
+WITH_ADB_INSECURE := false
+TARGET_INCLUDE_RIMUSIC := true
+ALPHA_BUILD_TYPE := Unofficial
+ALPHA_MAINTAINER := Hans982
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := infinity_flame
+PRODUCT_NAME := alpha_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
