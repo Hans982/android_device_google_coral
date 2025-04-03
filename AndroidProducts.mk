@@ -21,9 +21,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_coral.mk \
-    $(LOCAL_DIR)/infinity_flame.mk
+    $(LOCAL_DIR)/alpha_coral.mk \
+    $(LOCAL_DIR)/alpha_flame.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_coral-trunk_staging-userdebug \
-    infinity_flame-trunk_staging-userdebug
+    alpha_coral-trunk_staging-userdebug \
+    alpha_flame-trunk_staging-userdebug
