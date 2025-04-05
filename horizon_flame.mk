@@ -16,15 +16,13 @@ $(call inherit-product, device/google/coral/aosp_flame.mk)
 
 include device/google/coral/flame/device-lineage.mk
 
-AXION_CAMERA_REAR_INFO := 12,2,16,3
-AXION_CAMERA_FRONT_INFO := 8.1
-AXION_MAINTAINER := Hans982_(@taltalasuka)
-AXION_PROCESSOR := Qualcomm®_Snapdragon™_855+
+# HorizonDroid prop
+HORIZON_MAINTAINER := Hans982
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := lineage_flame
+PRODUCT_NAME := horizon_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
