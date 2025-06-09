@@ -17,7 +17,20 @@ $(call inherit-product, device/google/coral/aosp_flame.mk)
 include device/google/coral/flame/device-lineage.mk
 
 # HorizonDroid prop
-HORIZON_MAINTAINER := Hans982
+HORIZON_MAINTAINER := Envoy From The Silence
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Gapps flags
+WITH_GMS := true
+WITH_GMS_VARIANT := pico
+
+# Other flags
+TARGET_INCLUDE_MATLOG := false
+TARGET_INCLUDE_ACCORD := true
+TARGET_PREBUILT_BCR := true
+PRODUCT_NO_CAMERA := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
