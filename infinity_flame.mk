@@ -9,33 +9,26 @@ BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_flame.mk)
 
 include device/google/coral/flame/device-lineage.mk
 
-# HorizonDroid prop
-HORIZON_MAINTAINER := Envoy From The Silence
-
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Gapps flags
-WITH_GMS := true
-WITH_GMS_VARIANT := pico
-
-# Other flags
-TARGET_INCLUDE_MATLOG := false
-TARGET_INCLUDE_ACCORD := true
-TARGET_PREBUILT_BCR := true
-PRODUCT_NO_CAMERA := false
+# Infinity-x stuff 
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := Hans982
+TARGET_SUPPORTS_BLUR := false
+WITH_GAPPS := true
+TARGET_SHIPS_FULL_GAPPS := false
+TARGET_SHIPS_GOOGLE_DIALER := true
+USE_MOTO_CALCULATOR := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := horizon_flame
+PRODUCT_NAME := infinity_flame
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
