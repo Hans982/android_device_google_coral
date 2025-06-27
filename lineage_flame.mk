@@ -3,6 +3,29 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+ALLOW_MISSING_DEPENDENCIES := true
+TARGET_DISABLE_EPPE := true
+BUILD_BROKEN_DUP_RULES := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
+# AxionOS-Specific Flags
+AXION_MAINTAINER := Envoy_From_The_Silence
+AXION_PROCESSOR := Qualcomm_Sapdragon_855+
+PRODUCT_NO_CAMERA := false
+
+# Define rear camera specs
+AXION_CAMERA_REAR_INFO := 12,2MP + 16,3MP
+AXION_CAMERA_FRONT_INFO := 8,1MP
+
+# CPU
+AXION_CPU_SMALL_CORES := 0,1,2,3
+AXION_CPU_BIG_CORES   := 4,5,6
+AXION_CPU_PRIME_CORE  := 7
+AXION_CPU_BG          := 0-1
+AXION_CPU_FG          := 0-7
+
+# Blur
+TARGET_ENABLE_BLUR := false
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
