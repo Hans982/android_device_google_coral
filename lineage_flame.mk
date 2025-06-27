@@ -27,6 +27,10 @@ AXION_CPU_FG          := 0-7
 # Blur
 TARGET_ENABLE_BLUR := false
 
+# Gapps flags
+WITH_GMS := true
+WITH_GMS_VARIANT := core
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
