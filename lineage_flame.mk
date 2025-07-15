@@ -9,16 +9,6 @@ TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-# Inherit some common Mist-os stuff.
-MISTOS_MAINTAINER=Hans982
-TARGET_ENABLE_BLUR := false
-PRODUCT_NO_CAMERA := false
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-WITH_GMS := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false 
-TARGET_HAS_UDFPS := false
-EXTRA_UDFPS_ANIMATIONS := false
-
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
@@ -43,3 +33,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=flame
 
 $(call inherit-product, vendor/google/flame/flame-vendor.mk)
+
+# Inherit some common Mist-os stuff.
+MISTOS_MAINTAINER=Hans982
+MIST_BUILD_TYPE := UNOFFICIAL
+TARGET_ENABLE_BLUR := false
+PRODUCT_NO_CAMERA := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false 
+TARGET_HAS_UDFPS := false
+EXTRA_UDFPS_ANIMATIONS := false
