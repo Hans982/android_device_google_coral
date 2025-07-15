@@ -4,6 +4,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+MISTOS_MAINTAINER=Hans982
+TARGET_ENABLE_BLUR := false
+PRODUCT_NO_CAMERA := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false 
+TARGET_HAS_UDFPS := false
+EXTRA_UDFPS_ANIMATIONS := false
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
