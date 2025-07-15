@@ -234,5 +234,6 @@ BOARD_SUPER_PARTITION_ERROR_LIMIT := 9651093504
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/c2f2-setup.sh
 
 -include vendor/google_devices/coral/proprietary/BoardConfigVendor.mk
+-include vendor/lineage-priv/keys/keys.mk
 
 include device/google/coral/BoardConfigLineage.mk
