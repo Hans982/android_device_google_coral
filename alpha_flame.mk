@@ -43,9 +43,6 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_MATLOG := true
 
-# Extras
-TARGET_INCLUDE_SIMPLE_TUNE := true
-
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_flame.mk)
 
