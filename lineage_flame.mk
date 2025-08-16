@@ -3,7 +3,6 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
 ALLOW_MISSING_DEPENDENCIES := true
 TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
