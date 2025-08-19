@@ -11,6 +11,7 @@ DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 # BuildsFlags
 TARGET_USES_CORE_GAPPS := true
 WITH_BCR := true
+TARGET_OPTIMIZED_DEXOPT := true
 TARGET_DEFAULT_PIXEL_LAUNCHER := false
 
 # Inherit some common Lineage stuff.
