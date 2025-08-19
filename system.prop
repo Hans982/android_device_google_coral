@@ -1,0 +1,2 @@
+# Add these as PRODUCT_SYSTEM_PROPERTIES (system.prop), You may use utilities as libinit if configuring for unified devices
+ro.paranoid.maintainer=@taltalasuka
