@@ -237,5 +237,7 @@ BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/c2f2-setup.sh
 
 include device/google/coral/BoardConfigLineage.mk
 
-# Workaround missing sched headers
+# Workaround missing and ignore conflicting kernel sched headers
 TARGET_HAS_NO_KERNEL_SCHED_HEADERS := true
+TARGET_KERNEL_HEADERS_IGNORE += linux/sched.h
+TARGET_KERNEL_HEADERS_IGNORE += linux/sched/types.h
